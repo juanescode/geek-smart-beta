@@ -8,10 +8,11 @@ import {
 } from "./config.js";
 
 export const db = mysql2.createPool({
-  user: DB_USER,
-  host: DB_HOST,
-  password: DB_PASSWORD,
-  database: DB_DATABASE,
+  user: 'root',
+  host: 'localhost',
+  password: '',
+  database: 'geeksamrt',
+  port: 3306
 });
 
 db.query("SELECT 1")
